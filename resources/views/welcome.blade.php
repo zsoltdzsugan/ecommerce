@@ -1520,7 +1520,7 @@
 </head>
 
 <body
-    class="flex flex-col items-center p-6 min-h-screen lg:justify-center lg:p-8 bg-[#FDFDFC] text-[#1b1b18] dark:bg-[#0a0a0a]">
+    class="flex flex-col items-center p-6 min-h-screen lg:justify-center lg:p-8 bg-[#FDFDFC] text-[#1b1b18] dark:bg-custom">
     <header class="mb-6 w-full text-sm lg:max-w-4xl max-w-[335px] not-has-[nav]:hidden">
         @if (Route::has('login'))
             <nav class="flex gap-4 justify-end items-center">
