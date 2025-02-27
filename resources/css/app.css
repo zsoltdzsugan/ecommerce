@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-    .sidebarItemHover {
-        @apply text-customWhiteDarker hover:bg-customBgSidebar hover:text-customWhiteDarker;
-    }
+[x-cloak] {
+    display: none !important;
 }

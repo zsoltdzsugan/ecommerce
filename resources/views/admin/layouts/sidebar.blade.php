@@ -1,4 +1,4 @@
-<aside id="sidebar" class="flex flex-col justify-between h-screen text-gray-200 bg-gray-900 sm:w-64">
+<aside id="sidebar" x-show="sidebarState" x-cloak x-transition.duration.100ms class="flex flex-col justify-between h-screen text-gray-200 bg-gray-800 sm:w-64">
     <div class="p-4">
         <span class="grid overflow-hidden place-content-center w-56 h-10 text-lg text-gray-900 rounded-md">
             <img src="{{ asset('assets/img/brand-name.png') }}" alt="" class="object-cover w-full">
@@ -6,8 +6,8 @@
 
         <ul class="mt-6 space-y-1 text-gray-100">
             <li>
-                <a href="#" class="block py-2 px-4 font-medium rounded-md hover:bg-gray-700">
-                    General
+                <a href="{{ route('admin.dashboard') }}" class="block py-2 px-4 font-medium rounded-md hover:bg-gray-700">
+                    Dashboard
                 </a>
             </li>
 

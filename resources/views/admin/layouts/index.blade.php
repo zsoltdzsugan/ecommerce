@@ -16,13 +16,13 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="font-sans bg-gray-100 dark:bg-gray-800">
+<body class="font-sans bg-gray-100 dark:bg-gray-900">
 
-    <div class="flex w-screen h-screen">
+    <div class="flex w-screen h-screen" x-data="{ sidebarState: $persist(true) }" x-cloak>
         <!-- Sidebar -->
         @include('admin.layouts.sidebar')
 
-        <div class="overflow-auto flex-1 text-gray-900 bg-gray-100 dark:text-gray-300 dark:bg-gray-800">
+        <div class="overflow-auto flex-1 text-gray-900 bg-gray-100 dark:text-gray-300 dark:bg-gray-900">
             <!-- Navbar -->
             @include('admin.layouts.navigation')
 
@@ -34,14 +34,6 @@
             </div>
         </div>
     </div>
-
-    <!-- JavaScript for Sidebar Toggle Move to own file later -->
-    <script>
-        function toggleSidebar() {
-            const sidebar = document.getElementById('sidebar');
-            sidebar.classList.toggle('hidden');
-        }
-    </script>
 
 </body>
 
