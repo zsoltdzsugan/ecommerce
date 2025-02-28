@@ -1,4 +1,4 @@
-<aside id="sidebar" x-show="sidebarState" x-cloak x-transition.duration.100ms class="flex flex-col justify-between h-screen text-gray-200 bg-gray-800 sm:w-64">
+<aside id="sidebar" x-show="sidebarState" x-transition class="flex flex-col justify-between h-screen text-gray-200 bg-gray-800 sm:w-64">
     <div class="p-4">
         <span class="grid overflow-hidden place-content-center w-56 h-10 text-lg text-gray-900 rounded-md">
             <img src="{{ asset('assets/img/brand-name.png') }}" alt="" class="object-cover w-full">
